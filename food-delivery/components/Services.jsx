@@ -38,7 +38,6 @@ export default function Services() {
         <span>loredsfsafdsf</span>
       </div>
     </div>
-
     </>
   )
 };

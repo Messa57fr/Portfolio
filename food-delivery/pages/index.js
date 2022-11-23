@@ -5,6 +5,7 @@ import css from "../styles/Home.module.css";
 import Services from "../components/Services";
 import Menu from "../components/Menu";
 import { client } from "../lib/client";
+import Link from "next/link";
 
 export default function Home({pizzas}) {
   console.log(pizzas)
