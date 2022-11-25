@@ -1,12 +1,12 @@
 export default {
   name: "order",
-  title: "Order",
+  title: "order",
   type: "document",
   fields: [
     {
       name: "name",
       title: "Name",
-      type: "String",
+      type: "string",
       options: {
         maxLength: 40
       }
@@ -14,7 +14,7 @@ export default {
     {
       name: "phone",
       title: "Phone",
-      type: "String",
+      type: "string",
       options: {
         maxLength: 40
       }
@@ -22,20 +22,25 @@ export default {
     {
       name: "address",
       title: "Address",
-      type: "String",
+      type: "string",
       options: {
         maxLength: 40
       }
     },
     {
+      name: "method",
+      title: "Method",
+      type: "number"
+    },
+    {
       name: "total",
       title: "Total",
-      type: "Number"
+      type: "number"
     },
     {
       name: "status",
       title: "Status",
-      type: "Number"
+      type: "number"
     }
   ]
 }

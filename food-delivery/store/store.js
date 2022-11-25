@@ -26,6 +26,15 @@ export const useStore = create (
       cart : {
         pizzas : state.cart.pizzas.filter((_, i)=> i !=index)
       }
-    }))
+    })),
+
+    //Reset Cart
+    resetCart: () =>
+    set(()=> ({
+      cart: {
+        pizzas: []
+      }
+    })
+    )
   })
 )

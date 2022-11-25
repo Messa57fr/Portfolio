@@ -1,6 +1,6 @@
 export default{
   name:'pizza',
-  title:'Pizza',
+  title:'pizza',
   type:'document',
   fields: [
     {
