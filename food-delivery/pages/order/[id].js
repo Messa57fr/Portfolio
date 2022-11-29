@@ -8,6 +8,7 @@ import Image from "next/image"
 import Cooking from "../../assets/Cooking.png"
 import Onway from "../../assets/onway.png"
 import Spinner from "../../assets/spinner.svg"
+import { useEffect } from 'react';
 
 export const getServerSideProps = async ({ params }) => {
   const query = `*[_type == 'order' && _id == '${params.id}']`
@@ -22,6 +23,12 @@ export const getServerSideProps = async ({ params }) => {
 
 
 export default function Orders({ order }) {
+  useEffect(() => {
+    if(order.status>3){
+      localStorage.clear()
+    }
+  },[order]);
+
   return (
     <Layout>
       <div className={css.container}>
@@ -79,6 +86,9 @@ export default function Orders({ order }) {
                   <Image src={Spinner} alt ="" />
                 </div>
             )}
+            {order.status > 1 && (
+               <span className={css.completed}>Completed</span>
+            )}
           </div>
 
           <div className={css.status}>
@@ -89,6 +99,9 @@ export default function Orders({ order }) {
                   <Image src={Spinner} alt ="" />
                 </div>
             )}
+            {order.status > 2 && (
+               <span className={css.completed}>Completed</span>
+            )}
           </div>
 
           <div className={css.status}>
@@ -98,6 +111,9 @@ export default function Orders({ order }) {
                 <div className={css.spinner}>
                   <Image src={Spinner} alt ="" />
                 </div>
+            )}
+            {order.status > 3 && (
+               <span className={css.completed}>Completed</span>
             )}
           </div>
 

@@ -61,3 +61,11 @@
   border-radius: 1rem;
   color:white;
 }
+
+.completed {
+  border-radius: 1rem;
+  color: white;
+  background-color: rgb(34, 181, 81);
+  padding: 0.5rem;
+  font-size: 0.8rem;
+}
