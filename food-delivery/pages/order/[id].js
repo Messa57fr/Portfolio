@@ -21,7 +21,6 @@ export const getServerSideProps = async ({ params }) => {
   }
 }
 
-
 export default function Orders({ order }) {
   useEffect(() => {
     if(order.status>3){
