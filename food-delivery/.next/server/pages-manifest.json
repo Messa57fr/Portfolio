@@ -1,6 +1,11 @@
 {
   "/_app": "pages/_app.js",
+  "/api/order": "pages/api/order.js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/pizza/[slug]": "pages/pizza/[slug].js"
+  "/pizza/cart": "pages/pizza/cart.js",
+  "/menu": "pages/menu.js",
+  "/": "pages/index.js",
+  "/order/[id]": "pages/order/[id].js",
+  "/pizza/[slug]": "pages/pizza/[slug].js",
+  "/_document": "pages/_document.js"
 }
