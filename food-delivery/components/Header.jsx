@@ -25,9 +25,11 @@ export default function Header() {
       {/* Menu */}
       <ul className={css.menu}>
         <li>
-          <Link href="../">Home</Link>
+          <Link href='../'>Home</Link>
         </li>
-        <li>Menu</li>
+        <li>
+          <Link href='../'>Menu</Link>
+        </li>
         <li>Contact</li>
       </ul>
 

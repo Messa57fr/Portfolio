@@ -18,24 +18,24 @@ export default function Services() {
         <div className={css.ImageWrapper}>
           <Image src={s1} alt= "" objectFit='cover' layout='intrinsic'/>
         </div>
-        <span>ashdfskjahfl</span>
-        <span>loredsfsafdsf</span>
+        <span>Simple</span>
+        <span>Very easy to use</span>
       </div>
 
       <div className={css.feature}>
         <div className={css.ImageWrapper}>
           <Image src={s2} alt= "" objectFit='cover' layout='intrinsic'/>
         </div>
-        <span>ashdfskjahfl</span>
-        <span>loredsfsafdsf</span>
+        <span>Fast</span>
+        <span>Fastest in the world</span>
       </div>
 
       <div className={css.feature}>
         <div className={css.ImageWrapper}>
           <Image src={s3} alt= "" objectFit='cover' layout='intrinsic'/>
         </div>
-        <span>ashdfskjahfl</span>
-        <span>loredsfsafdsf</span>
+        <span>Delicious</span>
+        <span>The food you love</span>
       </div>
     </div>
     </>

@@ -4,11 +4,14 @@
   font-weight: bold;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .heading>:nth-child(1){
+  display: flex;
   color: var(--themeRed);
-  font-size: 1rem;
+  font-size: 2rem;
+  z-index: 1;
 }
 
 .heading>:nth-child(1) .heading>:nth-child(2){

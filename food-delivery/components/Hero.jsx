@@ -11,7 +11,7 @@ export default function Hero() {
       <div className={css.left}>
         {/* {left side} */}
         <div className={css.cherryDiv}>
-          <span>More than Better</span>
+          <span>More is More</span>
           <Image src={Cherry} alt="" width={40} height={25}/>
         </div>
 
