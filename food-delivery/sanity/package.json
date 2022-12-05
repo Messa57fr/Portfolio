@@ -2,7 +2,7 @@
   "name": "food-delivery",
   "private": true,
   "version": "1.0.0",
-  "description": "",
+  "description": "Test app",
   "main": "package.json",
   "author": "Samuel Coizet <messa57fr@gmail.com>",
   "license": "UNLICENSED",
