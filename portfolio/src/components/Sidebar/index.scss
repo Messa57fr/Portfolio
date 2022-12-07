@@ -1,0 +1,32 @@
+.nav-bar {
+  background: #181818;
+  width: 60px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  min-height: 500px;
+}
+
+.logo {
+  display: block;
+  padding: 2rem 0;
+  text-decoration: none;
+
+  img {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: 100% 0;
+  }
+
+  p {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
