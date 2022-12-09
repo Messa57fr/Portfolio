@@ -1,17 +1,38 @@
 import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
 import "./index.scss";
-import { useEffect } from "react";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
+  const refForm = useRef();
 
   useEffect(() => {
     setTimeout(() => {
       return setLetterClass("text-animate-hover");
     }, 2500);
   }, []);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_irms3j4",
+        "template_fxecruk",
+        refForm.current,
+        "4N1cEdPZewimm98zc"
+      )
+      .then(
+        () => {
+          alert("Message sent!");
+          window.location.reload(false);
+        },
+        () => {
+          alert("Failed to send message!");
+        }
+      );
+  };
   return (
     <>
       <div className="container contact-page">
@@ -32,15 +53,20 @@ const Contact = () => {
             form below.
           </p>
           <div className="contact-form">
-            <form>
+            <form ref={refForm} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
-                  <input type="text" name="name" placeholder="Name" required />
+                  <input
+                    type="text"
+                    name="user_name"
+                    placeholder="Name"
+                    required
+                  />
                 </li>
                 <li className="half">
                   <input
                     type="email"
-                    name="email"
+                    name="user_email"
                     placeholder="Email"
                     required
                   />
@@ -61,7 +87,7 @@ const Contact = () => {
                     required
                   />
                 </li>
-                <input type="submit" className="flat-button" value="SEND" />
+                <input type="submit" className="flat-button" value="Send" />
               </ul>
             </form>
           </div>
