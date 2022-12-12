@@ -41,6 +41,12 @@
 .about-page,
 .contact-page {
   .text-zone {
+    @media screen and (max-width: 900px) {
+      align-items: center;
+      left: 60px;
+      width: 80%;
+      padding: 0 4%;
+    }
     position: absolute;
     left: 10%;
     top: 50%;

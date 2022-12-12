@@ -1,4 +1,7 @@
 .stage-cube-cont {
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
   width: 50%;
   height: 100%;
   top: 0;

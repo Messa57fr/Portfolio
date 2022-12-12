@@ -78,6 +78,12 @@
 }
 
 .info-map {
+  @media screen and (max-width: 950px) {
+    top: 0px;
+    width: 120px;
+    font-size: 1rem;
+    right: 0;
+  }
   position: absolute;
   background-color: black;
   top: 50px;
@@ -94,6 +100,10 @@
   animation-fill-mode: forwards;
 
   a {
+    @media screen and (max-width: 950px) {
+      font-size: 1rem;
+      padding-top: 5px;
+    }
     font-size: 20px;
     display: block;
     padding-top: 20px;
@@ -103,6 +113,9 @@
 }
 
 .map-wrap {
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
   background: rgba(8, 253, 216, 0.1);
   float: right;
   width: 53%;
