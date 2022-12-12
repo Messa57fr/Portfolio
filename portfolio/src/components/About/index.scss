@@ -13,6 +13,9 @@
 }
 
 .cubespinner {
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
   animation-name: spincube;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
